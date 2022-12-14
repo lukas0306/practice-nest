@@ -38,7 +38,5 @@ export class MoviesController {
     patch(@Param('id') movieId:number, @Body() updateData:UpdateMovieDto){
         return this.movieService.update(movieId,updateData)
     }
-    // router '/'없어도 됨 ':id'
-
     
 } 
