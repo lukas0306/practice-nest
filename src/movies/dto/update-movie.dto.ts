@@ -11,5 +11,6 @@ import { CreateMovieDto } from './create-movie.dto'
 //     @IsString({each:true})
 //     readonly genres?:string[];
 // }
+// DTO를 새로 만드는 대신 createMovieDto를 가져와서 partialtype이용
 
 export class UpdateMovieDto extends PartialType(CreateMovieDto){}
