@@ -12,7 +12,7 @@ describe('MoviesController', () => {
     controller = module.get<MoviesController>(MoviesController);
   });
 
-  it('should be defined', () => {
-    expect(controller).toBeDefined();
-  });
+  test('it returns 200', ()=>{
+    expect(controller.getAll()).toBe(200)
+  })
 });
